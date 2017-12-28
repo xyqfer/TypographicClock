@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isRotate: false,
     block0: {
       isActive: false,
       isSecond: false
@@ -427,5 +428,11 @@ Page({
       title: '这是一个会『动』的时钟',
       imageUrl: './screenshot.png'
     };
+  },
+
+  onTap: function() {
+    this.setData({
+      'isRotate': !this.data.isRotate
+    });
   }
 })

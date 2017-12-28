@@ -1,4 +1,4 @@
-<view class='clock'>
+<view class='clock {{isRotate ? "clock-rotate" : ""}}' bindtap="onTap">
   <view class='block {{block0.isActive ? "block-active" : ""}} {{block0.isSecond ? "block-second" : ""}}'>00</view>
   <view class='block {{block1.isActive ? "block-active" : ""}} {{block1.isSecond ? "block-second" : ""}}'>01</view>
   <view class='block {{block2.isActive ? "block-active" : ""}} {{block2.isSecond ? "block-second" : ""}}'>02</view>

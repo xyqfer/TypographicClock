@@ -32,6 +32,11 @@ page {
   font-family: "RobotoMono-Light";
 }
 
+.clock-rotate {
+  top: -11rpx;
+  transform:rotate(90deg) scale(1.7);
+}
+
 .block {
   width: 7.2906249999999995%;
   height: 20%;
