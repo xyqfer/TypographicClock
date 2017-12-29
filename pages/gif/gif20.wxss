@@ -1,0 +1,14 @@
+.gif20-start {
+  left: -400rpx;
+  width: 350rpx;
+  height: 350rpx;
+}
+
+.gif20-end {
+  left: calc(100% + 500rpx);
+}
+
+.gif20-image {
+  width: 350rpx;
+  height: 350rpx;
+}

@@ -1,0 +1,14 @@
+.gif10-start {
+  right: -125rpx;
+  width: 374rpx;
+  height: 375rpx;
+}
+
+.gif10-end {
+  right: calc(100% + 500rpx);
+}
+
+.gif10-image {
+  width: 374rpx;
+  height: 375rpx;
+}

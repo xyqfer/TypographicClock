@@ -1,0 +1,14 @@
+.gif13-start {
+  left: -400rpx;
+  width: 450rpx;
+  height: 350rpx;
+}
+
+.gif13-end {
+  left: calc(100% + 500rpx);
+}
+
+.gif13-image {
+  width: 450rpx;
+  height: 350rpx;
+}

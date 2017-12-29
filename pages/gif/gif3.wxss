@@ -1,0 +1,14 @@
+.gif3-start {
+  right: -374rpx;
+  width: 374rpx;
+  height: 375rpx;
+}
+
+.gif3-end {
+  right: 100%;
+}
+
+.gif3-image {
+  width: 374rpx;
+  height: 375rpx;
+}

@@ -1,0 +1,33 @@
+@import 'gif0.wxss';
+@import 'gif1.wxss';
+@import 'gif2.wxss';
+@import 'gif3.wxss';
+@import 'gif4.wxss';
+@import 'gif5.wxss';
+@import 'gif6.wxss';
+@import 'gif7.wxss';
+@import 'gif8.wxss';
+@import 'gif9.wxss';
+@import 'gif10.wxss';
+@import 'gif11.wxss';
+@import 'gif12.wxss';
+@import 'gif13.wxss';
+@import 'gif14.wxss';
+@import 'gif15.wxss';
+@import 'gif16.wxss';
+@import 'gif17.wxss';
+@import 'gif18.wxss';
+@import 'gif19.wxss';
+@import 'gif20.wxss';
+
+.gif-container {
+  visibility: hidden;
+  position: absolute;
+  bottom: 10rpx;
+  z-index: 99;
+}
+
+.gif-enable {
+  visibility: visible;
+  transition: 12s right, 12s left;
+}

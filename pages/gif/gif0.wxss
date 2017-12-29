@@ -1,0 +1,14 @@
+.gif0-start {
+  left: -350rpx;
+  width: 350rpx;
+  height: 350rpx;
+}
+
+.gif0-end {
+  left: 100%;
+}
+
+.gif0-image {
+  width: 350rpx;
+  height: 350rpx;
+}

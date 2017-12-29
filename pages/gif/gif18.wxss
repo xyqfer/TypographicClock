@@ -1,0 +1,14 @@
+.gif18-start {
+  left: -400rpx;
+  width: 400rpx;
+  height: 350rpx;
+}
+
+.gif18-end {
+  left: calc(100% + 500rpx);
+}
+
+.gif18-image {
+  width: 400rpx;
+  height: 350rpx;
+}

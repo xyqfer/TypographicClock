@@ -6,252 +6,57 @@ Page({
    */
   data: {
     isRotate: false,
-    block0: {
-      isActive: false,
-      isSecond: false
-    },
-    block1: {
-      isActive: false,
-      isSecond: false
-    },
-    block2: {
-      isActive: false,
-      isSecond: false
-    },
-    block3: {
-      isActive: false,
-      isSecond: false
-    },
-    block4: {
-      isActive: false,
-      isSecond: false
-    },
-    block5: {
-      isActive: false,
-      isSecond: false
-    },
-    block6: {
-      isActive: false,
-      isSecond: false
-    },
-    block7: {
-      isActive: false,
-      isSecond: false
-    },
-    block8: {
-      isActive: false,
-      isSecond: false
-    },
-    block9: {
-      isActive: false,
-      isSecond: false
-    },
-    block10: {
-      isActive: false,
-      isSecond: false
-    },
-    block11: {
-      isActive: false,
-      isSecond: false
-    },
-    block12: {
-      isActive: false,
-      isSecond: false
-    },
-    block13: {
-      isActive: false,
-      isSecond: false
-    },
-    block14: {
-      isActive: false,
-      isSecond: false
-    },
-    block15: {
-      isActive: false,
-      isSecond: false
-    },
-    block16: {
-      isActive: false,
-      isSecond: false
-    },
-    block17: {
-      isActive: false,
-      isSecond: false
-    },
-    block18: {
-      isActive: false,
-      isSecond: false
-    },
-    block19: {
-      isActive: false,
-      isSecond: false
-    },
-    block20: {
-      isActive: false,
-      isSecond: false
-    },
-    block21: {
-      isActive: false,
-      isSecond: false
-    },
-    block22: {
-      isActive: false,
-      isSecond: false
-    },
-    block23: {
-      isActive: false,
-      isSecond: false
-    },
-    block24: {
-      isActive: false,
-      isSecond: false
-    },
-    block25: {
-      isActive: false,
-      isSecond: false
-    },
-    block26: {
-      isActive: false,
-      isSecond: false
-    },
-    block27: {
-      isActive: false,
-      isSecond: false
-    },
-    block28: {
-      isActive: false,
-      isSecond: false
-    },
-    block29: {
-      isActive: false,
-      isSecond: false
-    },
-    block30: {
-      isActive: false,
-      isSecond: false
-    },
-    block31: {
-      isActive: false,
-      isSecond: false
-    },
-    block32: {
-      isActive: false,
-      isSecond: false
-    },
-    block33: {
-      isActive: false,
-      isSecond: false
-    },
-    block34: {
-      isActive: false,
-      isSecond: false
-    },
-    block35: {
-      isActive: false,
-      isSecond: false
-    },
-    block36: {
-      isActive: false,
-      isSecond: false
-    },
-    block37: {
-      isActive: false,
-      isSecond: false
-    },
-    block38: {
-      isActive: false,
-      isSecond: false
-    },
-    block39: {
-      isActive: false,
-      isSecond: false
-    },
-    block40: {
-      isActive: false,
-      isSecond: false
-    },
-    block41: {
-      isActive: false,
-      isSecond: false
-    },
-    block42: {
-      isActive: false,
-      isSecond: false
-    },
-    block43: {
-      isActive: false,
-      isSecond: false
-    },
-    block44: {
-      isActive: false,
-      isSecond: false
-    },
-    block45: {
-      isActive: false,
-      isSecond: false
-    },
-    block46: {
-      isActive: false,
-      isSecond: false
-    },
-    block47: {
-      isActive: false,
-      isSecond: false
-    },
-    block48: {
-      isActive: false,
-      isSecond: false
-    },
-    block49: {
-      isActive: false,
-      isSecond: false
-    },
-    block50: {
-      isActive: false,
-      isSecond: false
-    },
-    block51: {
-      isActive: false,
-      isSecond: false
-    },
-    block52: {
-      isActive: false,
-      isSecond: false
-    },
-    block53: {
-      isActive: false,
-      isSecond: false
-    },
-    block54: {
-      isActive: false,
-      isSecond: false
-    },
-    block55: {
-      isActive: false,
-      isSecond: false
-    },
-    block56: {
-      isActive: false,
-      isSecond: false
-    },
-    block57: {
-      isActive: false,
-      isSecond: false
-    },
-    block58: {
-      isActive: false,
-      isSecond: false
-    },
-    block59: {
-      isActive: false,
-      isSecond: false
-    }
+    gifList: [
+      './images/board.gif',
+      './images/dog.gif',
+      './images/doggy.gif',
+      './images/ghost.gif',
+      './images/hiphop.gif',
+      './images/homer.gif',
+      './images/jumping-bird.gif',
+      './images/mario.gif',
+      './images/nyancat.gif',
+      './images/pikachu.gif',
+      './images/piqiu.gif',
+      './images/rabbit.gif',
+      './images/robot.gif',
+      './images/running-pikachu.gif',
+      './images/salamander.gif',
+      './images/sonic.gif',
+      './images/spongebob.gif',
+      './images/swim.gif',
+      './images/travel.gif',
+      './images/ufo.gif',
+      './images/walk.gif'
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setInitialData();
+    this.startClock();
+    this.startGif();
+  },
+
+  setInitialData: function() {
+    const totalLength = 60;
+    let initialData = {
+      blockData: []
+    };
+
+    for (let i = 0; i < totalLength; i++) {
+      initialData.blockData.push({
+        isActive: false,
+        isSecond: false
+      });
+    }
+
+    this.setData(initialData);
+  },
+
+  startClock: function() {
     const numbers = [
       [1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1], // 0
       [1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1], // 1
@@ -279,8 +84,8 @@ Page({
     const setNum = (block, num) => {
       let n = numbers[num];
       for (let i = 0; i < block.length; i++) {
-        let dataName = `block${block[i]}`;        
-        let blockData = this.data[dataName];
+        let dataName = `blockData[${block[i]}]`;
+        let blockData = this.data.blockData[block[i]];
         let obj = {};
 
         obj[dataName] = {
@@ -313,8 +118,8 @@ Page({
         for (let i = 0; i < digits.length; i++) {
           let d = digits[i];
           if (i == +s) {
-            let dataName = `block${d}`;
-            let blockData = this.data[dataName];
+            let dataName = `blockData[${d}]`;
+            let blockData = this.data.blockData[d];
 
             let obj = {};
 
@@ -326,8 +131,8 @@ Page({
             this.setData(obj);
 
             if (time.p != null) {
-              let dataName = `block${time.p}`;
-              let blockData = this.data[dataName];
+              let dataName = `blockData[${time.p}]`;
+              let blockData = this.data.blockData[time.p];
               let obj = {};
 
               obj[dataName] = {
@@ -337,7 +142,7 @@ Page({
 
               this.setData(obj);
             }
-              
+
             time.p = i;
             time.s = s;
           }
@@ -360,22 +165,41 @@ Page({
     };
 
     setTimeout(animator, 16);
+  },
 
-    // setTimeout(() => {
-    //   let dataName = `block${5}.isActive`;
-    //   let obj = {};
+  startGif: function() {
+    setTimeout(() => {
+      this.animateGif();
+    }, 1000);
+  },
 
-    //   console.log(this.data.block4)
+  animateGif: function() {
+    let gifIndex = Math.floor(Math.random() * this.data.gifList.length);
+    let gif = this.data.gifList[gifIndex];
 
-    //   obj[dataName] = {
-    //     isActive: true,
-    //     isSecond: true
-    //   }
+    this.setData({
+      gif: gif,
+      gifEnable: true,
+      gifContainerClass: `gif${gifIndex}-start`,
+      gifImageClass: `gif${gifIndex}-image`
+    });
 
-    //   console.log(obj)
+    setTimeout(() => {
+      this.setData({
+        gifContainerClass: `gif${gifIndex}-end`
+      });
 
-    //   this.setData(obj);
-    // }, 1000);
+      setTimeout(() => {
+        this.setData({
+          gifEnable: false,
+          gifContainerClass: ''
+        });
+
+        setTimeout(() => {
+          this.animateGif();
+        }, 8 * 1000);
+      }, 12 * 1000);
+    }, 100);
   },
 
   /**
@@ -426,13 +250,13 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '这是一个会『动』的时钟',
-      imageUrl: './screenshot.png'
+      imageUrl: './images/screenshot.png'
     };
   },
 
   onTap: function() {
     this.setData({
-      'isRotate': !this.data.isRotate
+      isRotate: !this.data.isRotate
     });
   }
 })

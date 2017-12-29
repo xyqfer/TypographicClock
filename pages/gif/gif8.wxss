@@ -1,0 +1,14 @@
+.gif8-start {
+  left: -400rpx;
+  width: 230rpx;
+  height: 150rpx;
+}
+
+.gif8-end {
+  left: calc(100% + 500rpx);
+}
+
+.gif8-image {
+  width: 230rpx;
+  height: 150rpx;
+}

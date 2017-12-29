@@ -1,0 +1,14 @@
+.gif7-start {
+  left: -400rpx;
+  width: 350rpx;
+  height: 300rpx;
+}
+
+.gif7-end {
+  left: calc(100% + 500rpx);
+}
+
+.gif7-image {
+  width: 350rpx;
+  height: 300rpx;
+}

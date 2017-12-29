@@ -1,0 +1,14 @@
+.gif9-start {
+  left: -125rpx;
+  width: 250rpx;
+  height: 149rpx;
+}
+
+.gif9-end {
+  left: calc(100% + 500rpx);
+}
+
+.gif9-image {
+  width: 250rpx;
+  height: 149rpx;
+}

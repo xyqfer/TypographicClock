@@ -1,0 +1,14 @@
+.gif6-start {
+  left: -400rpx;
+  width: 400rpx;
+  height: 350rpx;
+}
+
+.gif6-end {
+  left: calc(100% + 500rpx);
+}
+
+.gif6-image {
+  width: 400rpx;
+  height: 350rpx;
+}

@@ -1,0 +1,14 @@
+.gif14-start {
+  right: -374rpx;
+  width: 374rpx;
+  height: 375rpx;
+}
+
+.gif14-end {
+  right: calc(100% + 500rpx);
+}
+
+.gif14-image {
+  width: 374rpx;
+  height: 375rpx;
+}

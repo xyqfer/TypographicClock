@@ -1,0 +1,14 @@
+.gif15-start {
+  left: -200rpx;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.gif15-end {
+  left: calc(100% + 500rpx);
+}
+
+.gif15-image {
+  width: 150rpx;
+  height: 150rpx;
+}
