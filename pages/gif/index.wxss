@@ -20,11 +20,17 @@
 @import 'gif19.wxss';
 @import 'gif20.wxss';
 
-.gif-container {
-  visibility: hidden;
+.gif-wrap {
   position: absolute;
+  width: 100%;
   bottom: 10rpx;
   z-index: 99;
+  overflow: hidden;
+}
+
+.gif-container {
+  visibility: hidden;
+  position: relative;
 }
 
 .gif-enable {

@@ -9,6 +9,8 @@
   <view class='divider'></view>
 </view>
 
-<view class='gif-container {{gifEnable ? "gif-enable" : ""}} {{gifContainerClass}}'>
-  <image class='{{gifImageClass}}' src='{{gif}}'></image>
+<view class='gif-wrap'>
+  <view class='gif-container {{gifEnable ? "gif-enable" : ""}} {{gifContainerClass}}'>
+    <image class='{{gifImageClass}}' src='{{gif}}'></image>
+  </view>
 </view>
