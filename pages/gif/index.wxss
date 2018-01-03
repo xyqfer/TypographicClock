@@ -23,14 +23,15 @@
 .gif-wrap {
   position: absolute;
   width: 100%;
-  bottom: 10rpx;
+  height: 100%;
   z-index: 99;
   overflow: hidden;
 }
 
 .gif-container {
   visibility: hidden;
-  position: relative;
+  position: absolute;
+  bottom: 10rpx;
 }
 
 .gif-enable {

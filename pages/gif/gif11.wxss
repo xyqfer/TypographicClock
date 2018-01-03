@@ -1,11 +1,11 @@
 .gif11-start {
-  right: -125rpx;
+  right: -374rpx;
   width: 374rpx;
   height: 375rpx;
 }
 
 .gif11-end {
-  right: calc(100% + 500rpx);
+    right: calc(100% + 500rpx); 
 }
 
 .gif11-image {

@@ -1,5 +1,5 @@
 .gif9-start {
-  left: -125rpx;
+  left: -250rpx;
   width: 250rpx;
   height: 149rpx;
 }
