@@ -1,0 +1,5 @@
+<view class='stars-container'>
+  <view class='stars1'></view>
+  <view class='stars2'></view>
+  <view class='stars3'></view>
+</view>

@@ -1,3 +1,5 @@
+<tc-stars></tc-stars>
+
 <view class='clock {{isRotate ? "clock-rotate" : ""}}' bindtap="onTap">
 
   <block wx:for="{{blockData}}" wx:key="index">
