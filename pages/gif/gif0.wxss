@@ -5,7 +5,7 @@
 }
 
 .gif0-end {
-  left: 100%;
+  left: calc(100% + 350rpx);
 }
 
 .gif0-image {
