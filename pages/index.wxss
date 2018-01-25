@@ -15,7 +15,6 @@ page {
 .clock {
   position: relative;
   z-index: 100;
-  top: -44rpx;
   display: flex;
   flex-flow: column wrap;
   width: 640rpx;
